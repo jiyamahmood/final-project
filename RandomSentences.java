@@ -109,7 +109,15 @@ public class RandomSentences {
 
         }
 
-        // generateSentences: this method generates a random sentence using the given list of words
+        /**
+        * generateSentences: this method generates a random sentence using the given list of words
+        * @param articles the list of articles for the random sentence generator
+        * @param nouns the list of nouns for the random sentence generator
+        * @param verbs the list of verbs for the random sentence generator
+        * @param prepositions the list of prepositions for the random sentence generator 
+        * @param random the random object applied to choose random words
+        * @return the random sentence generated
+        */ 
         public static String generateSentences(
             ArrayList<String> articles,
             ArrayList<String> nouns,
@@ -139,4 +147,5 @@ public class RandomSentences {
                 return sb.toString();
 
     }
+
 }
